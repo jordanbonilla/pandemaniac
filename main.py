@@ -1,16 +1,26 @@
 import json
 import networkx as nx
-import pylab as pl
-import numpy as np
 import matplotlib.pyplot as plt
 import sys
 
 if __name__ == "__main__":
 	G = nx.Graph();
 	if(len(sys.argv) != 2):
-		print "please specify graph json file"
+		print "python main.py [json file]"
 		sys.exit(-1);
-	with open(sys.argv[1]) as json_file:
+	filename = sys.argv[1];
+	# "Graphs are named in the following (semantic) way: 
+	# num_players.num_seeds.unique_id "
+	game_specifications = filename.split(".")
+	num_players = game_specifications[0];
+	num_seeds = game_specifications[1];
+	unique_id = game_specifications[2];
+
+	print "num players:", num_players
+	print "num seeds:", num_seeds
+	print "unqiue id:", unique_id
+
+	with open(filename) as json_file:
 		data = json.load(json_file)
 		for i in range(len(data)):
 			G.add_node(i)
@@ -24,19 +34,9 @@ if __name__ == "__main__":
 	print "Maximal diameter:", nx.diameter(G) ;
 	print "Average diameter:", nx.average_shortest_path_length(G) ;
 
-	raw = data.values();
-	data = [len(x) for x in raw]
+	#raw = data.values();
+	#data = [len(x) for x in raw]
 	
-	data_sorted = np.sort(data)
-	p = 1. * np.arange(len(data)) / (len(data) - 1)
-	fig = plt.figure()
-	ax1 = fig.add_subplot(121)
-	ax1.plot(data_sorted, 1 - p)
-	ax1.set_ylabel('$p$')
-	ax1.set_xlabel('$x$')
-	ax2 = fig.add_subplot(122)	
-	pl.hist(data)
-	pl.show()
 	
 
 
