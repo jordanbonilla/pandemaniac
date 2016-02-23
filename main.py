@@ -12,9 +12,9 @@ if __name__ == "__main__":
 	# "Graphs are named in the following (semantic) way: 
 	# num_players.num_seeds.unique_id "
 	game_specifications = filename.split(".")
-	num_players = game_specifications[0];
-	num_seeds = game_specifications[1];
-	unique_id = game_specifications[2];
+	num_players = int(game_specifications[0]);
+	num_seeds = int(game_specifications[1]);
+	unique_id = int(game_specifications[2]);
 
 	print "num players:", num_players
 	print "num seeds:", num_seeds
