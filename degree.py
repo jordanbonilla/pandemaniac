@@ -13,7 +13,7 @@ def generate_seeds(num_players, num_seeds, G):
 	degrees = [(None, None)] * len(neighbors)  # tuple of (node_id, degree)
 	for i in range(len(neighbors)):
 		degrees[i] = ( i, len(neighbors[i]) )
-	sorted_degrees = sorted(degrees, key=itemgetter(1))
+	sorted_degrees = sorted(degrees, key=itemgetter(1), reverse=True)
 	for i in range(num_seeds):
 		seeds[i] = sorted_degrees[i][0]
 
