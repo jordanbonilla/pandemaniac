@@ -34,19 +34,19 @@ def writeseeds(seeds):
 
 
 if __name__ == "__main__":
-	if(len(sys.argv) != 4):
-		print "python main.py <json_file> <strat1> <strat2>"
+	if(len(sys.argv) < 3):
+		print "python main.py <json_file> [strategies...]"
 		sys.exit(-1);
 
 	# Parse the JSON file into a graph.
 	(num_players, num_seeds, data, G) = scanfile(sys.argv[1])
 
 	# Generate the seeds based on graph data.
-	seeds1 = __import__(sys.argv[2]).generate_seeds(num_players, num_seeds, G)
-        seeds1 = map(str, list(seeds1))
-        seeds2 = __import__(sys.argv[3]).generate_seeds(num_players, num_seeds, G)
-        seeds2 = map(str, list(seeds2))
+        nodes = {}
+        for i in range(2, len(sys.argv)):
+            seeds = __import__(sys.argv[i]).generate_seeds(num_players, num_seeds, G)
+            seeds = map(str, list(seeds))[:num_seeds]
+            nodes[sys.argv[i]] = seeds
 
-        nodes = {sys.argv[2]: seeds1[:num_seeds], sys.argv[3]: seeds2[:num_seeds]}
         print sim.run(data, nodes)
 
