@@ -9,7 +9,7 @@ def generate_seeds(num_players, num_seeds, G):
 
 	neighbors = nx.to_dict_of_lists(G).values()
 
-	degrees = seeds = np.zeros(len(neighbors), dtype=np.int)
+	degrees = np.zeros(len(neighbors), dtype=np.int)
 	sum_degrees = [(None, None)] * len(neighbors)  # tuple of (node_id, degree)
 	# Assign degrees to each node in the graph
 	for i in range(len(neighbors)):
