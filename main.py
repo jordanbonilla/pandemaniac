@@ -2,9 +2,6 @@ import json
 import networkx as nx
 import sys
 
-# Modules containing different strategies
-import degree
-
 NUM_ROUNDS = 50 # Given in the homework set
 
 def scanfile(filename):
@@ -34,15 +31,15 @@ def writeseeds(seeds):
 
 
 if __name__ == "__main__":
-	if(len(sys.argv) != 2):
-		print "python main.py [json file]"
+	if(len(sys.argv) != 3):
+		print "python main.py <json_file> <strategy>"
 		sys.exit(-1);
 
 	# Parse the JSON file into a graph.
 	(num_players, num_seeds, G) = scanfile(sys.argv[1])
 
 	# Generate the seeds based on graph data.
-	seeds = degree.generate_seeds(num_players, num_seeds, G)
+	seeds = __import__(sys.argv[2]).generate_seeds(num_players, num_seeds, G)
 
 	# Get the top "num_seeds" nodes in terms of degree to use for seeds
 	# Write our selected seeds to file:
