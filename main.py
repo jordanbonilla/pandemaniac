@@ -1,6 +1,9 @@
 import json
 import networkx as nx
 import sys
+import copy
+
+import sim
 
 NUM_ROUNDS = 50 # Given in the homework set
 
@@ -21,7 +24,7 @@ def scanfile(filename):
 			for j in range(len(data[str(i)])):
 				G.add_edge(i, int(data[str(i)][j]))
 
-	return (num_players, num_seeds, G)
+	return (num_players, num_seeds, data, G)
 
 def writeseeds(seeds):
 	# Re-use the same seeds for every round
@@ -31,19 +34,19 @@ def writeseeds(seeds):
 
 
 if __name__ == "__main__":
-	if(len(sys.argv) != 3):
-		print "python main.py <json_file> <strategy>"
+	if(len(sys.argv) != 4):
+		print "python main.py <json_file> <strat1> <strat2>"
 		sys.exit(-1);
 
 	# Parse the JSON file into a graph.
-	(num_players, num_seeds, G) = scanfile(sys.argv[1])
+	(num_players, num_seeds, data, G) = scanfile(sys.argv[1])
 
 	# Generate the seeds based on graph data.
-	seeds = __import__(sys.argv[2]).generate_seeds(num_players, num_seeds, G)
+	seeds1 = __import__(sys.argv[2]).generate_seeds(num_players, num_seeds, G)
+        seeds1 = map(str, list(seeds1))
+        seeds2 = __import__(sys.argv[3]).generate_seeds(num_players, num_seeds, G)
+        seeds2 = map(str, list(seeds2))
 
-	# Get the top "num_seeds" nodes in terms of degree to use for seeds
-	# Write our selected seeds to file:
-	writeseeds(seeds)
-
-
+        nodes = {sys.argv[2]: seeds1[:num_seeds], sys.argv[3]: seeds2[:num_seeds]}
+        print sim.run(data, nodes)
 
