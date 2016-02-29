@@ -1,0 +1,144 @@
+successes: 9 params: 1 13 7
+{'cdn': 294, 'degree': 202}
+{'cdn': 215, 'degree': 285}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 14 8
+{'cdn': 303, 'degree': 193}
+{'cdn': 215, 'degree': 285}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 15 8
+{'cdn': 294, 'degree': 202}
+{'cdn': 215, 'degree': 285}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 16 8
+{'cdn': 294, 'degree': 202}
+{'cdn': 215, 'degree': 285}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 16 9
+{'cdn': 303, 'degree': 193}
+{'cdn': 215, 'degree': 285}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 17 9
+{'cdn': 294, 'degree': 202}
+{'cdn': 215, 'degree': 285}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 17 10
+{'cdn': 303, 'degree': 193}
+{'cdn': 214, 'degree': 286}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 18 9
+{'cdn': 294, 'degree': 202}
+{'cdn': 215, 'degree': 285}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 18 10
+{'cdn': 294, 'degree': 202}
+{'cdn': 215, 'degree': 285}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 18 11
+{'cdn': 303, 'degree': 193}
+{'cdn': 214, 'degree': 286}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 19 9
+{'cdn': 304, 'degree': 192}
+{'cdn': 215, 'degree': 285}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 19 10
+{'cdn': 294, 'degree': 202}
+{'cdn': 215, 'degree': 285}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+successes: 9 params: 1 19 11
+{'cdn': 303, 'degree': 193}
+{'cdn': 214, 'degree': 286}
+{'cdn': 477, 'degree': 23}
+{'cdn': 473, 'degree': 27}
+{'cdn': 485, 'degree': 14}
+{'cdn': 472, 'degree': 25}
+{'cdn': 463, 'degree': 29}
+{'cdn': 318, 'degree': 181}
+{'cdn': 478, 'degree': 22}
+{'cdn': 257, 'degree': 239}
+jordan@GrottoHPC:~/Documents/CS144/pandemaniac$ 

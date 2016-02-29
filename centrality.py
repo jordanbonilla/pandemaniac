@@ -13,6 +13,6 @@ def generate_seeds(num_players, num_seeds, G):
     sorted_centralities = sorted(m.items(), key=itemgetter(1), reverse=True)
 
     for i in range(num_seeds):
-        seeds[i] = sorted_centralities[i][0]
+		seeds[i] = sorted_centralities[i][0]
 
     return seeds
